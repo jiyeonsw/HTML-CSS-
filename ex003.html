@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex002</title>
+    <style>
+      .range {
+        border: 5px groove yellowgreen;
+      }
+      #tsize {
+        margin: 30px 30px;
+        padding-left: 10px;
+        border: 2px solid goldenrod;
+      }
+      .content {
+        color: blue;
+      }
+      .sentence {
+        font-style: italic;
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Tag Difference</h2>
+
+    <div class="range">div tag : 블록 요소, 브라우저 범위</div>
+    <p class="range">p tag : 블록 요소, 브라우저 범위</p>
+    <span class="range">span tag : 인라인 요소, 문자 범위</span>
+    <br /><br />
+
+    <h2>Div > P > Span</h2>
+    <div id="tsize">
+      div tag : title
+      <p id="tsize" class="content">
+        p tag : content<br />
+        <span id="tsize" class="sentence">span tag : sentence</span>
+        <br />
+        p tag
+      </p>
+      div tag
+    </div>
+  </body>
+</html>
